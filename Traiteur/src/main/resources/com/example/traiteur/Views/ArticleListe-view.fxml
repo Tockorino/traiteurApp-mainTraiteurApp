@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="ArticleListeAnchor" prefHeight="52.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.traiteur.Views.ArticleListeController">
+   <children>
+      <Label fx:id="PoidsLabel" layoutX="6.0" layoutY="31.0" text="1000 g" AnchorPane.bottomAnchor="3.6666666666666714" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="31.0" />
+      <Label fx:id="NomLabel" layoutX="5.0" layoutY="5.0" text="Carbonade" AnchorPane.bottomAnchor="29.66666666666667" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Label fx:id="PrixLabel" layoutX="264.0" layoutY="30.0" text="12 €" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="30.0" />
+   </children>
+</AnchorPane>

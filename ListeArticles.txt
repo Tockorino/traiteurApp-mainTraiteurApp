@@ -1,0 +1,36 @@
+Plats
+Boeuf bourguignon
+1.5
+false
+Fruits
+Pomme
+1.5
+true
+Viandes
+steak
+2
+false
+Viandes
+filet de poulet
+1.5
+false
+Fruits
+banane
+1.5
+true
+nouvelle catgorie
+poire
+1.5
+true
+Plats
+Spag bolo
+15.0
+false
+Plats
+dgf
+14.0
+false
+Plats
+Vol au vent
+45.0
+true

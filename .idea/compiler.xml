@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Traiteur" />
+        <module name="traiteurApp-mainTraiteurApp" />
+        <module name="Client" />
+        <module name="TerminalPaiement" />
+        <module name="Boucherie" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="TraiteurFx-Client" target="19" />
+      <module name="TraiteurFX-TerminalPaiement" target="19" />
+      <module name="TraiteurFx-Vendeur" target="19" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
