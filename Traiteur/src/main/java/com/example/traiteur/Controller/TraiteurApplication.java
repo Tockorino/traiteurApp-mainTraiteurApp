@@ -2,6 +2,7 @@ package com.example.traiteur.Controller;
 
 import com.example.traiteur.Models.Articles;
 import com.example.traiteur.Models.Categories;
+import com.example.traiteur.Views.BalanceController;
 import com.example.traiteur.Views.CommandeViewController;
 import com.example.traiteur.Views.ProductViewController;
 import com.example.traiteur.Views.TraiteurController;
@@ -20,6 +21,8 @@ public class TraiteurApplication extends Application {
     public static List<Categories> categories = new ArrayList<>();
     public static File file = new File("ListeArticles.txt");
     private static Stage principalStage;
+
+    private static ProductViewController productViewController;
     @Override
     public void start(Stage stage) throws IOException {
         if(file.exists()) {
@@ -31,8 +34,10 @@ public class TraiteurApplication extends Application {
         principalStage = stage;
         chargerTraiteurView();
 
-        FXMLLoader fxmlLoader2 = new FXMLLoader(TraiteurController.class.getResource("Balance-view.fxml"));
+       FXMLLoader fxmlLoader2 = new FXMLLoader(TraiteurController.class.getResource("Balance-view.fxml"));
         Scene scene2 = new Scene(fxmlLoader2.load());
+        BalanceController balanceController = fxmlLoader2.getController();
+        balanceController.setProductInteraction(productViewController);
         Stage stage2 = new Stage();
         stage2.setTitle("Balance");
         stage2.setScene(scene2);
@@ -44,6 +49,7 @@ public class TraiteurApplication extends Application {
             FXMLLoader fxmlLoader1 = new FXMLLoader(TraiteurController.class.getResource("Traiteur-view.fxml"));
             Scene scene1 = null;
             scene1 = new Scene(fxmlLoader1.load());
+            productViewController= fxmlLoader1.getController();
             principalStage.setTitle("bonjour je suis traiteur");
             principalStage.setScene(scene1);
             principalStage.show();

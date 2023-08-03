@@ -18,6 +18,7 @@ public class ArticleListeController extends Node implements Serializable {
     @FXML
     private static Label PrixLabel;
 
+
     public void initialize() {
         PoidsLabel.setText("poidsProduit");
         NomLabel.setText("nomProduit");
